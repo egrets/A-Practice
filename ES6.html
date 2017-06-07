@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+    let str = 'return ' + '`Hello ${name}!`';
+    let func = new Function('name', str);
+    console.log(func('Jack'));
+    </script>
+    </body>
+</html>
